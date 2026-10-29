@@ -1,0 +1,76 @@
+:root { color-scheme: dark; --gold: #d4af37; --gold-light: #f4dfab; --ink: #000; }
+html { scroll-behavior: smooth; scroll-padding-top: 4rem; }
+body { margin: 0; background: var(--ink); }
+::selection { background: var(--gold); color: var(--ink); }
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #a98a32; border: 2px solid #050505; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #e5c65b; }
+* { scrollbar-color: #a98a32 #050505; scrollbar-width: thin; }
+
+.site-header { background: linear-gradient(180deg, rgb(0 0 0 / 68%), transparent); }
+.brand { text-shadow: 0 1px 18px rgb(0 0 0 / 60%); }
+.nav-link { transition: color .25s ease; }
+.nav-link:hover { color: var(--gold-light); }
+.hero { background: #17130b; isolation: isolate; }
+.hero-video { object-position: center 48%; filter: brightness(1.1) contrast(1.05) saturate(.92); will-change: transform, opacity; }
+.hero-shade { background: linear-gradient(180deg, rgb(0 0 0 / 34%) 0%, rgb(0 0 0 / 18%) 38%, rgb(0 0 0 / 60%) 100%), linear-gradient(90deg, rgb(0 0 0 / 14%), transparent 45%, rgb(0 0 0 / 14%)); }
+.hero-content { will-change: transform, opacity; }
+.eyebrow i { display: inline-block; width: 28px; height: 1px; background: rgb(244 223 171 / 55%); }
+.gold-button { background: rgb(0 0 0 / 28%); }
+.gold-button span, .text-link span { transition: transform .25s ease; }
+.gold-button:hover span { transform: translate(3px, 3px); }
+.text-link:hover span { transform: translateX(4px); }
+.scroll-cue::after { content: ""; display: block; width: 1px; height: 34px; margin: 12px auto 0; background: linear-gradient(var(--gold), transparent); }
+
+.heritage-section { background-image: url("https://images.unsplash.com/photo-1578999935853-4ec5fa6c1f60?auto=format&fit=crop&w=2400&q=90"); background-attachment: fixed; }
+.heritage-shade { background: linear-gradient(90deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 46%) 50%, rgb(0 0 0 / 60%)), linear-gradient(0deg, rgb(0 0 0 / 36%), transparent 45%, rgb(0 0 0 / 36%)); }
+.heritage-content, .experience-heading, .experience-image, .experience-copy { will-change: transform, opacity; }
+.ornament { display: flex; width: 150px; align-items: center; justify-content: center; gap: 12px; color: var(--gold); font-size: 15px; }
+.ornament span { height: 1px; flex: 1; background: rgb(212 175 55 / 55%); }
+.suites-section { background: #080807; }
+.culinary-section { background: #f5f1e8; }
+.culinary-section .experience-image { border: 1px solid rgb(156 121 33 / 35%); }
+.culinary-section .experience-image::after { border-color: rgb(156 121 33 / 38%); }
+.culinary-section .experience-image img { filter: saturate(.82); }
+.culinary-section .experience-image:hover img { filter: saturate(1); }
+.culinary-section .gold-rule { background: #9c7921; }
+.location-section { background: #0b0a08; }
+.map-frame { min-height: 350px; background: #28251e; }
+.map-frame iframe { display: block; width: 100%; height: 100%; min-height: 350px; border: 0; filter: grayscale(.72) sepia(.18) brightness(.82); transition: filter .35s ease; }
+.map-frame:hover iframe { filter: grayscale(.2) sepia(.08) brightness(.95); }
+.location-copy { background: radial-gradient(ellipse at 100% 0%, rgb(212 175 55 / 9%), transparent 70%), #11100d; }
+.location-action span { transition: transform .2s ease; }
+.location-action:hover span { transform: translate(2px, -2px); }
+.footer-heading { font-family: Cinzel, serif; font-size: 11px; letter-spacing: .15em; color: #d4af37; text-transform: uppercase; }
+.footer-link { color: #a8a29e; font-size: 11px; font-weight: 300; transition: color .2s ease; }
+.footer-link:hover { color: #f4dfab; }
+.social-links a { display: grid; width: 30px; height: 30px; place-items: center; border: 1px solid rgb(212 175 55 / 35%); border-radius: 50%; color: #d4af37; font-family: Cinzel, serif; font-size: 11px; transition: color .2s ease, background .2s ease; }
+.social-links svg { width: 15px; height: 15px; fill: currentColor; }
+.social-links a:first-child svg { fill: none; stroke: currentColor; stroke-width: 1.6; }
+.social-links a:first-child .icon-dot { fill: currentColor; stroke: none; }
+.social-links a:hover { background: #d4af37; color: #000; }
+.experience-image { position: relative; min-height: 280px; aspect-ratio: 1.32 / 1; background: #211c12; }
+.experience-image::after { position: absolute; inset: 0; border: 1px solid rgb(212 175 55 / 22%); content: ""; pointer-events: none; }
+.experience-image img { width: 100%; height: 100%; min-height: 280px; object-fit: cover; filter: saturate(.78) brightness(.88); transition: transform .8s cubic-bezier(.2,.7,.2,1), filter .8s ease; }
+.experience-image:hover img { transform: scale(1.035); filter: saturate(1) brightness(1); }
+.gold-rule { width: 54px; height: 1px; background: var(--gold); }
+.closing-note { background: radial-gradient(ellipse at center, rgb(119 87 37 / 13%), transparent 68%), #11100d; }
+.site-footer { position: relative; isolation: isolate; overflow: hidden; border-top: 1px solid rgb(212 175 55 / 25%); background: #050505; }
+.footer-video { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 55%; filter: brightness(.52) saturate(.72); }
+.footer-shade { position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgb(0 0 0 / 82%), rgb(0 0 0 / 61%) 50%, rgb(0 0 0 / 82%)), linear-gradient(0deg, rgb(0 0 0 / 70%), rgb(0 0 0 / 22%)); }
+.footer-content { position: relative; z-index: 1; }
+
+@media (max-width: 767px) {
+  .hero { min-height: 610px; height: 94svh; }
+  .hero-video { object-position: 54% center; }
+  .experience-image { aspect-ratio: 1.2 / 1; }
+  .heritage-section { background-attachment: scroll; }
+  .experience-row { row-gap: 1.5rem; }
+  .experience-row .experience-copy { padding-top: 0; }
+  .map-frame, .map-frame iframe { min-height: 300px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}

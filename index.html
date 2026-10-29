@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Discover the timeless grace and modern luxury of The Royal Palace, Jaipur.">
+  <title>The Royal Palace | A Timeless Legacy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-stone-100 font-['Plus_Jakarta_Sans',sans-serif] selection:bg-[#d4af37] selection:text-black">
+  <header class="site-header absolute inset-x-0 top-0 z-30">
+    <nav class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-6 md:px-12" aria-label="Main navigation">
+      <a class="brand font-['Cinzel'] text-sm tracking-[.18em] text-amber-100 md:text-base" href="#top">THE ROYAL PALACE</a>
+      <div class="hidden items-center gap-8 text-[10px] uppercase tracking-[.2em] text-white/75 md:flex">
+        <a class="nav-link" href="#about">Our story</a><a class="nav-link" href="#suites">Suites</a><a class="nav-link" href="#dining">Dining</a><a class="nav-link" href="#location">Location</a>
+      </div>
+      <a class="hidden border border-[#d4af37]/60 px-5 py-3 text-[10px] uppercase tracking-[.2em] text-amber-100 transition hover:bg-[#d4af37] hover:text-black md:inline-flex" href="#contact">Enquire</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="top" class="hero relative flex min-h-[650px] h-screen w-full items-center justify-center overflow-hidden" aria-label="Welcome to The Royal Palace">
+      <video class="hero-video absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline preload="auto" aria-hidden="true" tabindex="-1">
+        <source src="./assets/videos/hero-video.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shade absolute inset-0"></div>
+      <div class="hero-content relative z-10 mx-auto max-w-5xl px-5 pt-20 text-center">
+        <span class="eyebrow mb-6 inline-flex items-center gap-3 text-[10px] uppercase tracking-[.38em] text-amber-200 md:text-xs"><i></i> Jaipur · Rajasthan <i></i></span>
+        <p class="mb-3 font-['Cinzel'] text-sm tracking-[.3em] text-amber-200 md:text-lg">Your journey begins</p>
+        <h1 class="font-['Cinzel'] text-4xl font-medium leading-tight tracking-[.08em] text-[#f4dfab] sm:text-6xl md:text-7xl lg:text-8xl">THE ROYAL<br class="sm:hidden"> PALACE</h1>
+        <p class="mx-auto mt-6 max-w-lg text-xs font-light leading-7 tracking-[.1em] text-white/75 md:text-sm">A storied sanctuary where the romance of Rajasthan lives on.</p>
+        <a href="#about" class="gold-button mt-10 inline-flex items-center gap-5 border border-[#d4af37]/80 px-7 py-4 text-[10px] uppercase tracking-[.24em] text-amber-100 transition duration-300 hover:bg-[#d4af37] hover:text-black md:px-9">Explore Heritage <span aria-hidden="true">↘</span></a>
+      </div>
+      <a href="#about" class="scroll-cue absolute bottom-8 left-1/2 z-10 -translate-x-1/2 text-[9px] uppercase tracking-[.3em] text-white/55">Scroll to discover</a>
+    </section>
+
+    <!-- Section 1: The Heritage & Welcome (Increased length & fixed background image) -->
+    <section id="about" class="heritage-section relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-cover bg-center bg-no-repeat px-6 py-36 text-center md:px-20">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80" aria-hidden="true"></div>
+
+        <div class="heritage-content relative z-10 mx-auto max-w-4xl py-8">
+            <p class="mb-5 font-['Cinzel'] text-sm font-medium uppercase tracking-[.3em] text-[#d4af37]">WHERE THE PAST IS ALWAYS PRESENT</p>
+            <h2 class="mb-8 font-['Cinzel'] text-3xl font-bold leading-snug text-[#f4dfab] md:text-5xl">A Timeless Legacy of Grace</h2>
+            <div class="mx-auto mb-8 h-px w-20 bg-[#d4af37]/70"></div>
+            <p class="text-base font-light leading-relaxed text-neutral-300 md:text-lg">
+                Nestled in the heart of Jaipur, The Royal Palace is an invitation to step into a living story. Here, the grandeur of Rajasthan's royal heritage meets the quiet comforts of modern luxury. From intricately carved details to gracious, intuitive hospitality, every moment is made to linger.
+            </p>
+        </div>
+    </section>
+
+    <section id="suites" class="suites-section px-6 py-20 md:px-12 md:py-28">
+      <div class="mx-auto max-w-[1320px]">
+        <header class="experience-heading mb-14 text-center md:mb-20">
+          <p class="mb-4 text-[10px] uppercase tracking-[.32em] text-[#d4af37] md:text-xs">A stay beyond the ordinary</p>
+          <h2 class="font-['Cinzel'] text-3xl font-normal text-[#f4dfab] sm:text-4xl md:text-5xl">The Royal Collection</h2>
+          <p class="mx-auto mt-5 max-w-xl text-sm font-light leading-7 text-stone-400">Three distinct residences, each shaped by the artistry and warmth of Rajasthan.</p>
+        </header>
+        <article class="experience-row grid items-center gap-8 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-image image-left overflow-hidden"><img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1400&q=90" alt="The Maharaja Suite, an elegant room with warm palace details" loading="lazy"></div>
+          <div class="experience-copy copy-right py-4 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#d4af37]">01 · Rest like royalty</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#f4dfab] md:text-4xl">The Maharaja Suite</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-300/75 md:text-base">A private world of carved wood, heirloom textiles, and generous light. Unwind in a sanctuary shaped by royal tradition, with considered modern comforts and a balcony overlooking the gardens.</p><a href="#suites" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-amber-200">Enquire about the suite <span>→</span></a></div>
+        </article>
+        <article class="experience-row mt-20 grid items-center gap-8 md:mt-28 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-copy copy-left order-2 py-4 md:order-1 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#d4af37]">02 · A private retreat</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#f4dfab] md:text-4xl">The Mewar Pavilion</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-300/75 md:text-base">Vintage character meets quiet seclusion in this graceful hideaway. Relax among rich textures and timeless details, with space to slow down and make the palace your own.</p><a href="#suites" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-amber-200">Discover the Pavilion <span>→</span></a></div>
+          <div class="experience-image image-right order-1 overflow-hidden md:order-2"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1400&q=90" alt="The Mewar Pavilion with refined furnishings and warm natural tones" loading="lazy"></div>
+        </article>
+        <article class="experience-row mt-20 grid items-center gap-8 md:mt-28 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-image image-left overflow-hidden"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1400&q=90" alt="The Crown Jewel, a spacious luxury residence" loading="lazy"></div>
+          <div class="experience-copy copy-right py-4 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#d4af37]">03 · The pinnacle of palace living</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#f4dfab] md:text-4xl">The Crown Jewel</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-300/75 md:text-base">Panoramic city views, a secluded plunge pool, and attentive butler service make this remarkable residence an address all its own.</p><a href="#contact" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-amber-200">Discover the residence <span>→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="dining" class="culinary-section px-6 py-20 text-stone-800 md:px-12 md:py-28">
+      <div class="mx-auto max-w-[1320px]">
+        <header class="culinary-heading mb-14 text-center md:mb-20"><p class="mb-4 text-[10px] uppercase tracking-[.32em] text-[#9c7921] md:text-xs">The art of gathering</p><h2 class="font-['Cinzel'] text-3xl font-normal text-[#302719] sm:text-4xl md:text-5xl">Culinary Poetry</h2><p class="mx-auto mt-5 max-w-xl text-sm font-light leading-7 text-stone-600">A table set for discovery, from regal Rajasthani flavours to evenings beneath the open sky.</p></header>
+        <article class="experience-row dining-entry grid items-center gap-8 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-image image-left overflow-hidden"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=90" alt="The Darbar Hall dining room set for an elegant dinner" loading="lazy"></div>
+          <div class="experience-copy copy-right py-4 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#9c7921]">01 · A royal table</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#302719] md:text-4xl">The Darbar Hall</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-600 md:text-base">Dine beneath soaring arches and soft candlelight. The Darbar Hall honours the grand traditions of the royal kitchen with seasonal menus and gracious service.</p><a href="#dining" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-[#846516]">Explore the Darbar Hall <span>→</span></a></div>
+        </article>
+        <article class="experience-row mt-20 grid items-center gap-8 md:mt-28 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-copy copy-left order-2 py-4 md:order-1 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#9c7921]">02 · Garden-side dining</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#302719] md:text-4xl">The Peacock Pavilion</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-600 md:text-base">An intimate pavilion for leisurely lunches and unhurried conversation, with fresh local ingredients and the garden’s quiet beauty all around.</p><a href="#dining" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-[#846516]">Visit the Pavilion <span>→</span></a></div>
+          <div class="experience-image image-right order-1 overflow-hidden md:order-2"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=90" alt="The Peacock Pavilion, an intimate garden restaurant" loading="lazy"></div>
+        </article>
+        <article class="experience-row mt-20 grid items-center gap-8 md:mt-28 md:grid-cols-2 md:gap-16 lg:gap-24">
+          <div class="experience-image image-left overflow-hidden"><img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=90" alt="Candlelit rooftop terrace prepared for an elegant evening dinner" loading="lazy"></div>
+          <div class="experience-copy copy-right py-4 md:py-10"><p class="mb-4 text-[10px] uppercase tracking-[.3em] text-[#9c7921]">03 · Evenings under the stars</p><h3 class="font-['Cinzel'] text-3xl leading-snug text-[#302719] md:text-4xl">Jharokha Terrace</h3><div class="gold-rule my-6"></div><p class="max-w-lg text-sm font-light leading-8 text-stone-600 md:text-base">As the city turns to gold, settle in for rooftop dining with sweeping Jaipur views, fragrant regional dishes, and a sky full of stars.</p><a href="#dining" class="text-link mt-8 inline-flex items-center gap-4 text-[10px] uppercase tracking-[.2em] text-[#846516]">Discover the Terrace <span>→</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="location" class="location-section px-6 py-20 md:px-12 md:py-28">
+      <div class="mx-auto max-w-[1320px]">
+        <header class="location-heading mb-12 text-center"><p class="mb-4 text-[10px] uppercase tracking-[.32em] text-[#d4af37]">Find your way to us</p><h2 class="font-['Cinzel'] text-3xl text-[#f4dfab] md:text-5xl">Jaipur, Our Home</h2></header>
+        <div class="location-card grid overflow-hidden border border-[#d4af37]/25 md:grid-cols-[1.15fr_.85fr]">
+          <div class="map-frame"><iframe title="Map showing Jaipur, Rajasthan" src="https://www.openstreetmap.org/export/embed.html?bbox=75.775%2C26.885%2C75.865%2C26.975&amp;layer=mapnik&amp;marker=26.9124%2C75.7873" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+          <div class="location-copy flex flex-col justify-center px-7 py-10 md:px-12 md:py-14">
+            <p class="text-[10px] uppercase tracking-[.28em] text-[#d4af37]">The Pink City</p><h3 class="mt-4 font-['Cinzel'] text-2xl text-[#f4dfab]">A palace in the heart of Jaipur</h3>
+            <p class="mt-5 text-sm font-light leading-7 text-stone-300">Palace Road<br>Jaipur, Rajasthan 302002<br>India</p>
+            <a class="location-action mt-8 inline-flex w-fit items-center gap-3 border border-[#d4af37]/60 px-5 py-3 text-[9px] uppercase tracking-[.2em] text-amber-100 transition hover:bg-[#d4af37] hover:text-black" target="_blank" rel="noopener noreferrer" href="https://www.openstreetmap.org/?mlat=26.9124&amp;mlon=75.7873#map=14/26.9124/75.7873">Open interactive map <span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="closing-note px-6 py-20 text-center md:py-28"><p class="mb-5 text-[10px] uppercase tracking-[.32em] text-[#d4af37]">An invitation to stay awhile</p><h2 class="font-['Cinzel'] text-2xl font-normal leading-relaxed text-[#f4dfab] md:text-4xl">Come for the stories.<br>Stay for the feeling.</h2><a href="#location" class="gold-button mt-8 inline-flex items-center gap-4 border border-[#d4af37]/80 px-7 py-4 text-[10px] uppercase tracking-[.24em] text-amber-100 transition hover:bg-[#d4af37] hover:text-black">Begin your stay <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer id="contact" class="site-footer px-6 py-12 md:px-12 md:py-16">
+    <video class="footer-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1">
+      <source src="./assets/videos/footer-video.mp4" type="video/mp4">
+    </video>
+    <div class="footer-shade" aria-hidden="true"></div>
+    <div class="footer-content">
+    <div class="mx-auto grid max-w-[1320px] gap-10 text-center md:grid-cols-4 md:text-left">
+      <div class="md:col-span-1"><a href="#top" class="font-['Cinzel'] text-base tracking-[.18em] text-[#f4dfab]">THE ROYAL PALACE</a><p class="mt-4 max-w-xs text-xs font-light leading-6 text-stone-500">A timeless address for gracious stays and treasured moments in Jaipur.</p></div>
+      <div><h2 class="footer-heading">Visit</h2><p class="mt-4 text-xs font-light leading-6 text-stone-400">Palace Road<br>Jaipur, Rajasthan 302002<br>India</p></div>
+      <div><h2 class="footer-heading">Contact</h2><a class="footer-link mt-4 block" href="mailto:reservations@theroyalpalacejaipur.com">reservations@theroyalpalacejaipur.com</a><a class="footer-link mt-3 block" href="tel:+911410000000">Concierge · +91 141 000 0000</a><a class="footer-link mt-2 block" href="tel:+919800000000">Reservations · +91 98000 00000</a></div>
+      <div><h2 class="footer-heading">Explore</h2><div class="mt-4 grid grid-cols-2 gap-x-4 gap-y-3 text-xs"><a class="footer-link" href="#about">Our story</a><a class="footer-link" href="#suites">Suites</a><a class="footer-link" href="#dining">Dining</a><a class="footer-link" href="#location">Location</a></div><div class="social-links mt-6 flex justify-center gap-4 md:justify-start" aria-label="Social media"><a href="https://www.instagram.com/" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle class="icon-dot" cx="18" cy="6" r="1"></circle></svg></a><a href="https://www.facebook.com/" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h1.7V1.4C17 1.2 15.8 1 14.4 1 11 1 9 3 9 6.8V9H6v4h3v8z"></path></svg></a><a href="https://www.pinterest.com/" aria-label="Pinterest" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.6 19.3c0-.8 0-1.8.2-2.7l1.3-5.5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.8 0 1.2.6 1.2 1.4 0 .9-.6 2.2-.9 3.4-.3 1 .5 1.8 1.5 1.8 1.8 0 3.2-1.9 3.2-4.6 0-2.4-1.7-4.1-4.1-4.1-2.8 0-4.5 2.1-4.5 4.3 0 .9.3 1.9.8 2.4.1.2.2.3.1.6l-.3 1c0 .3-.2.4-.5.2-1.3-.6-2.1-2.5-2.1-4.1 0-3.3 2.4-6.3 6.9-6.3 3.6 0 6.4 2.6 6.4 6.1 0 3.7-2.3 6.7-5.4 6.7-1 0-2-.6-2.3-1.3l-.7 2.8c-.3 1-.9 2-1.4 2.8A10 10 0 1 0 12 2z"></path></svg></a></div></div>
+    </div>
+    <div class="mx-auto mt-12 max-w-[1320px] border-t border-white/10 pt-6 text-center"><p class="text-[9px] uppercase tracking-[.16em] text-stone-600">© 2026 THE ROYAL PALACE. All Rights Reserved.</p></div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
